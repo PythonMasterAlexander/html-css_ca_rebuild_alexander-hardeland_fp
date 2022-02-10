@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	background-color: var(--backgroundColor);
 }
 
 *, *:before, *:after {
@@ -16,76 +17,92 @@ html {
 	font-size: 16px;
 	--blackColor: #000;
 	--whiteColor: #fff;
+	--backgroundColor: #5CDB95;
+	--linkColor: #05386B;
 }
 
 body {
-	color: var(--blackColor);
 	font: 400 1.3rem 'Roboto', sans-serif;
 }
 
 h1 {
-	font-size: 3rem;
+	flex: 0 0 100%;
+	font-size: 2rem;
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-weight: 400;
 }
 
-h1, h2 {
+main h3 {
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+h1, h2, main h3 {
 	font-family: 'Arvo', 'Georgia', serif;
 }
 
-nav a {
-	color: var(--whiteColor);
+a {
+	font-weight: 700;
+}
+
+header p, header a {
+	color: var(--linkColor);
 }
 
 p {
 	font-size: 1.5rem;
 }
 
-li {
+header p, li {
 	display: inline-block;
+}
+
+img {
+	color: var(--linkColor);
+	height: 20px;
+	width: 20px;
+}
+
+.header__covidGuidelinesSection a {
+	font-size: 1rem;
+}
+
+footer a, footer h3, footer h4, .header__covidGuidelinesSection a {
+	color: var(--whiteColor);
+}
+
+.header__covidGuidelinesSection {
+	background-color: var(--blackColor);
+	flex: 0 0 100%;
+	text-align: center;
 }
 
 main {
 	margin: 0 auto;
-	max-width: 1500px;
+	max-width: 2000px;
+	gap: 20px;
 	width: 90%;
+}
+
+main section {
+	max-width: 580px;
 }
 
 ul {
 	display: block;
 }
 
+header, main, footer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 main span {
 	text-decoration: solid underline;
 	text-decoration-color: #946500;
-}
-
-footer, header {
-	color: #fff;
-	min-height: 300px;
-	text-align: center;
-}
-
-header {
-	background-color: #94180F;
-}
-
-header section {
-	float: left;
-	margin-top: 4%;
-	width: 30%;
-}
-
-header section:first-child {
-	background-color: #00D5E0;
-	float: none;
-	font-size: 18px;
-	margin: 0px;
-	min-height: 40px;
-	width: 100%;
 }
 
 header section:first-child h3 {
@@ -105,8 +122,7 @@ header section:last-child h3 {
 }
 
 footer {
-	background-color: #000000;
-	font-size: 24px;
+	background-color: var(--blackColor);
 }
 
 footer section {
