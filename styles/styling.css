@@ -31,14 +31,10 @@ h1 {
 	font-size: 2rem;
 }
 
-h2 {
-	font-size: 1.8rem;
+h2, main h3 {
+	font-size: 1.5rem;
 	font-weight: 400;
-}
-
-main h3 {
-	font-size: 1.6rem;
-	font-weight: 400;
+	margin-bottom: 0.5rem;
 }
 
 h1, h2, main h3 {
@@ -49,26 +45,26 @@ a {
 	font-weight: 700;
 }
 
-header p, header a {
+main section:nth-child(2) a, main li {
+	display: block;
+}
+
+main li {
+	line-height: 2rem;
+	list-style: square;
+}
+
+header p, header a, main a {
 	color: var(--linkColor);
 }
 
 p {
-	font-size: 1.5rem;
-}
-
-main li {
-	display: block;
+	font-size: 1.3rem;
+	line-height: 1.7rem;
 }
 
 header p, li {
 	display: inline-block;
-}
-
-img {
-	color: var(--linkColor);
-	height: 20px;
-	width: 20px;
 }
 
 .header__covidGuidelinesSection a {
@@ -79,9 +75,37 @@ footer a, footer h3, footer h4, .header__covidGuidelinesSection a {
 	color: var(--whiteColor);
 }
 
+img {
+	color: var(--linkColor);
+	height: 20px;
+	width: 20px;
+}
+
+.main__sectionContainer--landingPageImages {
+	display: block;
+	height: 400px;
+	width: 300px;
+}
+
+.main__sectionContainer-landingPageImages__columnThree--imageOne {
+	height: 400px;
+	width: 500px;
+}
+
+.main__sectionContainer-landingPageImages__columnThree--imageTwo {
+	display: block;
+	height: 400px;
+	margin: 30px auto;
+	width: 300px;
+}
+
+.standAlone--image {
+	height: 500px;
+	width: 400px;
+}
+
 header {
 	height: 150px;
-	justify-content: space-evenly;
 }
 
 .header__covidGuidelinesSection {
@@ -92,28 +116,52 @@ header {
 }
 
 main {
-	margin: 0 auto;
+	margin: 200px auto;
 	max-width: 2000px;
 	gap: 20px;
 	width: 90%;
 }
 
 main section {
-	background-color: var(--whiteColor);
-	max-width: 580px;
+	max-width: 600px;
 	padding: 20px;
+}
+
+main section:nth-child(2), main section:nth-child(2) div {
+	color: var(--whiteColor);
+}
+
+main section:nth-child(3) {
+	background-color: var(--backgroundColor);
+}  
+
+main section:nth-child(4) {
+	background-color: var(--whiteColor);
+}
+
+main section:nth-child(2), main section:last-child {
+	border-radius: 2px;
+	height: fit-content;
+}
+
+main section:nth-child(2) div {
+	margin-bottom: 80px;
+}
+
+.standAlone--imageContainer {
+	width: fit-content;
 }
 
 footer {
 	align-items: center;
 	background-color: var(--blackColor);
-	justify-content: space-evenly;
 	height: 250px;
 }
 
 header, main, footer {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 [role="main"] p {
@@ -124,16 +172,24 @@ a:link {
 	text-decoration: none;
 }
 
-a:hover {
-	padding: 20px;
-}
 
 a:active {
 	text-decoration: underline;
 }
 
-#submitButton {
-	font-family: 'Courier New', Courier, monospace;
+.button {
+	border-radius: 2px;
+	background-color: var(--linkColor);
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+	margin-bottom: 0;
+}
+
+.button a {
+	color: var(--whiteColor);
+	font-size: 1.8rem;
+	padding: 20px;
 }
 
 @media only screen and (max-width: 1767px) {
