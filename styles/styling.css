@@ -29,6 +29,7 @@ h1 {
 	color: var(--whiteColor);
 	flex: 0 0 100%;
 	font-size: 2rem;
+	margin-bottom: 100px;
 }
 
 h2, main h3 {
@@ -41,6 +42,10 @@ h1, h2, main h3 {
 	font-family: 'Arvo', 'Georgia', serif;
 }
 
+footer a, footer h3, footer h4, .header__covidGuidelinesSection a, main h3, main li {
+	color: var(--whiteColor);
+}
+
 a {
 	font-weight: 700;
 }
@@ -51,7 +56,6 @@ main section:nth-child(2) a, main li {
 
 main li {
 	line-height: 2rem;
-	list-style: square;
 }
 
 header p, header a, main a {
@@ -69,10 +73,6 @@ header p, li {
 
 .header__covidGuidelinesSection a {
 	font-size: 1rem;
-}
-
-footer a, footer h3, footer h4, .header__covidGuidelinesSection a {
-	color: var(--whiteColor);
 }
 
 img {
@@ -118,7 +118,6 @@ header {
 main {
 	margin: 200px auto;
 	max-width: 2000px;
-	gap: 20px;
 	width: 90%;
 }
 
@@ -131,21 +130,8 @@ main section:nth-child(2), main section:nth-child(2) div {
 	color: var(--whiteColor);
 }
 
-main section:nth-child(3) {
-	background-color: var(--backgroundColor);
-}  
-
-main section:nth-child(4) {
-	background-color: var(--whiteColor);
-}
-
 main section:nth-child(2), main section:last-child {
-	border-radius: 2px;
 	height: fit-content;
-}
-
-main section:nth-child(2) div {
-	margin-bottom: 80px;
 }
 
 .standAlone--imageContainer {
@@ -162,6 +148,12 @@ header, main, footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+}
+
+main section:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
 }
 
 [role="main"] p {
@@ -182,8 +174,6 @@ a:active {
 	background-color: var(--linkColor);
 	text-align: center;
 	width: 300px;
-	margin: 0 auto;
-	margin-bottom: 0;
 }
 
 .button a {
@@ -192,6 +182,14 @@ a:active {
 	padding: 20px;
 }
 
+.readButton a {
+	font-size: 1.3rem;
+	padding: 10px;
+}
+
+.readButton {
+	margin-top: 15px;
+}
 @media only screen and (max-width: 1767px) {
 	footer section:last-child {
 		clear: left;
