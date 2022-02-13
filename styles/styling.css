@@ -27,7 +27,7 @@ body {
 
 h1 {
 	color: var(--whiteColor);
-	flex: 0 0 100%;
+	flex: 0 0 85%;
 	font-size: 2rem;
 	margin-bottom: 100px;
 }
@@ -38,23 +38,42 @@ h2, main h3 {
 	margin-bottom: 0.5rem;
 }
 
-h1, h2, main h3 {
+h1, h2, main h3, .header__logoContainer a {
 	font-family: 'Arvo', 'Georgia', serif;
 }
 
-footer a, footer h3, footer h4, .header__covidGuidelinesSection a, main h3, main li {
+.header__covidGuidelinesSection a, section h3, section li {
 	color: var(--whiteColor);
+}
+
+footer h3 {
+	font-size: 1.3rem;
+}
+
+footer a, footer h3, footer h4 {
+	color: var(--blackColor);
 }
 
 a {
 	font-weight: 700;
+	font-size: 1.8rem;
+	text-transform: uppercase;
 }
 
-main section:nth-child(2) a, main li {
+.header__logoContainer a {
+	font-size: 3.5rem;
+	text-transform: capitalize;
+}
+
+footer a {
+	font-size: 1.3rem;
+}
+
+main section:nth-child(2) a {
 	display: block;
 }
 
-main li {
+section li {
 	line-height: 2rem;
 }
 
@@ -67,7 +86,7 @@ p {
 	line-height: 1.7rem;
 }
 
-header p, li {
+li {
 	display: inline-block;
 }
 
@@ -109,16 +128,17 @@ header {
 }
 
 .header__covidGuidelinesSection {
-	background-color: var(--blackColor);
 	flex: 0 0 100%;
 	height: 30px;
 	text-align: center;
 }
 
+header nav, header section:nth-child(4) {
+	align-self: center;
+}
+
 main {
-	margin: 200px auto;
-	max-width: 2000px;
-	width: 90%;
+	margin: 100px 0;
 }
 
 main section {
@@ -134,13 +154,15 @@ main section:nth-child(2), main section:last-child {
 	height: fit-content;
 }
 
-.standAlone--imageContainer {
-	width: fit-content;
+.body__sectionContainer {
+	background-color: var(--linkColor);
+	text-align: center;
+	padding: 30px 0;
 }
 
 footer {
 	align-items: center;
-	background-color: var(--blackColor);
+	background-color: var(--whiteColor);
 	height: 250px;
 }
 
