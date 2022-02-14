@@ -22,11 +22,11 @@ html {
 }
 
 body {
+	color: var(--whiteColor);
 	font: 400 1.3rem 'Roboto', sans-serif;
 }
 
 h1 {
-	color: var(--whiteColor);
 	flex: 0 0 85%;
 	font-size: 2rem;
 	margin-bottom: 100px;
@@ -42,21 +42,14 @@ h1, h2, main h3, .header__logoContainer a {
 	font-family: 'Arvo', 'Georgia', serif;
 }
 
-.header__covidGuidelinesSection a, section h3, section li {
-	color: var(--whiteColor);
-}
-
-footer h3 {
+footer h3, footer a {
+	font-weight: 400;
 	font-size: 1.3rem;
-}
-
-footer a, footer h3, footer h4 {
-	color: var(--blackColor);
 }
 
 a {
 	font-weight: 700;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	text-transform: uppercase;
 }
 
@@ -69,7 +62,8 @@ footer a {
 	font-size: 1.3rem;
 }
 
-main section:nth-child(2) a {
+main section:nth-child(2) a, .main__sectionContainer--landingPageImages, .main__sectionContainer-landingPageImages__columnThree--imageTwo, 
+.divContainer__image, .main__sectionContainer-landingPageImages__columnThree--imageOne {
 	display: block;
 }
 
@@ -91,6 +85,7 @@ li {
 }
 
 .header__covidGuidelinesSection a {
+	color: var(--whiteColor);
 	font-size: 1rem;
 }
 
@@ -101,7 +96,6 @@ img {
 }
 
 .main__sectionContainer--landingPageImages {
-	display: block;
 	height: 400px;
 	width: 300px;
 }
@@ -112,15 +106,19 @@ img {
 }
 
 .main__sectionContainer-landingPageImages__columnThree--imageTwo {
-	display: block;
 	height: 400px;
-	margin: 30px auto;
 	width: 300px;
 }
 
 .standAlone--image {
 	height: 500px;
 	width: 400px;
+}
+
+.divContainer__image {
+	height: 800px;
+	margin: 150px auto;
+	width: 800px;
 }
 
 header {
@@ -143,11 +141,6 @@ main {
 
 main section {
 	max-width: 600px;
-	padding: 20px;
-}
-
-main section:nth-child(2), main section:nth-child(2) div {
-	color: var(--whiteColor);
 }
 
 main section:nth-child(2), main section:last-child {
@@ -161,8 +154,8 @@ main section:nth-child(2), main section:last-child {
 }
 
 footer {
+	color: var(--linkColor);
 	align-items: center;
-	background-color: var(--whiteColor);
 	height: 250px;
 }
 
@@ -212,95 +205,51 @@ a:active {
 .readButton {
 	margin-top: 15px;
 }
-@media only screen and (max-width: 1767px) {
-	footer section:last-child {
-		clear: left;
-		display: none;
+@media only screen and (max-width: 1400px) {
+	h1 {
+		font-size: 1.8rem;
 	}
 
-	header li {
-		display: block;
+	.divContainer__image {
+		height: 500px;
+		width: 500px;
 	}
 
-	header ul {
-		text-align: left;
+	main section:nth-child(2), main section:nth-child(3) {
+		padding: 20px;
 	}
 
-	header section:nth-child(2) {
-		font-size: 36px;
-		margin-top: 8%;
-		width: 40%;
-	}
-
-	header section:nth-child(3) {
-		float: right;
-		margin-top: 5%;
-		padding-top: 0px;
-		width: 40%;
-		justify-content: right;
-	}
-
-	header section:last-child {
-		display: none;
-	}
-
-	.main-page__div-block-2__section {
-		display: none;
-	}
-
-	.main-page__div-block-1__third-section {
+	main section:last-child {
 		display: none;
 	}
 }
 
-@media only screen and (max-width: 736px) {
-	header {
-		min-height: 130px;
+@media only screen and (max-width: 800px) {
+	h1 {
+		font-size: 1.5rem;
 	}
 
-	footer section:first-child, section:last-child {
-		display:none;
+	h1, h2 {
+		text-align: center;
 	}
 
-	footer section:nth-child(2) {
-		float: none;
-		margin: 0px;
-		padding-top: 20%;
+	.button {
+		margin: 20px auto;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	h1 {
+		font-size: 1.2rem;
+		margin-bottom: 50px;
 	}
 
-	header section:nth-child(2) {
-		width: 100%;
-		float: none;
-		margin-top: 30px;
-	}
-
-	header section:nth-child(2) h1 {
-		font-size: 35px;
-	}
-
-	header section:nth-child(3), #header__section--mobil-nav--remove-h1 {
+	main section:nth-child(3), .body__imageContainer {
 		display: none;
 	}
 
-	.header__section--div-container, .header__section--mobil-nav {
-		display: inline-block;
-	}
-
-	.header__section--margin {
-		padding: 0px 75px 0px 75px;
-	}
-	
-	.main-page__div-block-2__article {
-		display: none;
-	}
-
-	.main-page__div-block-1 {
-		flex-direction: column;
-	}
-
-	.main-page__div-block-1__first-section, .main-page__div-block-1__second-section, .main-page__div-block-1__third-section {
-		width: 100%;
-		margin: 20px 0px 0px 0px;
+	footer {
+		margin-top: 100px;
 	}
 }
 /*

@@ -5,97 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The Tour page for Re-Cycle, the Bicycle Company that brings you eco-friendly bike tours in a city near you">
     <link rel="stylesheet" href="styles/styling.css">
-    <title>The Re-Cycle tours page, showing you eco-friendly bike tours all over the world</title>
+    <title>Re-Cycle tours page, showing you eco-friendly bike tours all over the world</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <section>
-        <h3>Covid Guidelines</h3>
-      </section>
-      <section>
-        <div class="header__section--mobil-nav header__section--margin header__section__div--right-border__disepear">
-          <i class="fas fa-bars"></i>
+    <div class="contentWrapper"> 
+      <header>
+        <section class="header__covidGuidelinesSection">
+          <a>Covid Guidelines</a>
+        </section>
+        <div class="header__logoContainer">
+          <a href="index.html">Re-Cycle</a>
         </div>
-        <div class="header__section--div-container header__section--margin">
-        <h1>Re-Cycle</h1>
-        </div>
-          <h1 id="header__section--mobil-nav--remove-h1" class="header__section--mobil-nav header__section--margin">Contact</h1>
-        <div class="header__section--mobil-nav header__section--margin header__section__div--left-border__disepear">
-          <a href="routes-tours.html" title="Link to Re-Cycle -Trips page"><i class="fas fa-search"></i></a>
-        </div>
-      </section>
-      <section>
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="routes-tours.html">Bike Tour</a></li>
-            <li><a href="contact.html">Contact</a></li>
-         </ul>
+          <a href="index.html">Home</a> 
+          <a href="about.html">About</a> 
+          <a href="routes-tours.html">Bike Tour</a>
+          <a href="contact.html">Contact</a>
         </nav>
-      </section>
-      <section>
-        <i class="fas fa-sign-in-alt"></i>
-        <h3>LogIn</h3>
-        <i class="fas fa-search"></i>
-        <h3>Search</h3>
-      </section>
-    <main> 
-      <section>
-        <input type="search" title="Try... Norway or Bike in Oslo" class="main-search__field">
-        <input type="submit" value="search" class="main-search__field--submit-button">
-      </section>
-      <section>
-        <table>
-          <tr>
-            <th>COUNTRY</th>
-            <th>CITY</th>
-          </tr>
+        <section>
+          <img src="" alt=""><img src="images/menu-icon-white.svg" alt="Hamburger menu, for web">
+        </section>
+      </header>
+      <main> 
+        <section>
+          <input type="search" title="Try... Norway or Bike in Oslo" class="main-search__field">
+          <input type="submit" value="search" class="main-search__field--submit-button">
+        </section>
+        <section>
+          <table>
             <tr>
-            <td>NORWAY</td>
-            <td>OSLO, BERGEN, STAVANGER</td>
-          </tr>
-          <tr>
-            <td>SWEDEN</td>
-            <td>STOCKHOLM</td>
-          </tr>
-          <tr>
-            <td>FINLAND</td>
-            <td>HELSINKI</td>
-          </tr>
-          <tr>
-            <td>USA</td>
-            <td>CHICAGO, LA, NEW YORK<td>
-          </tr>
-          <tr>
-            <td>ENGLAND</td>
-            <td>LONDON, LIVERPOOL</td>
-          </tr>
-        </table>
-      </section>
-      <section class="tour-page__main__section-3-iframe">
-        <iframe id="iframe" title="Google Maps" src="https://www.google.com" width="500px" height="500px" frameborder="1" allowfullscreen></iframe>
-      </section>
-    </main>
-		<footer>
-			<h3>re-cycle.com &copy; <span>2020</span></h3>
-			<section>
-				<h3>social media</h3>
-				<ul>
-					<li><a href="https://www.instagram.com" target="_self"></a><i class="fab fa-instagram"></i></li>
-					<li><a href="https://twitter.com" target="_self"></a><i class="fab fa-twitter"></i></li>
-				  <li><a href="https://www.facebook.com" target="_self"></a><i class="fab fa-facebook"></i></li>
-				</ul>
-			</section>
-			<ul> 
-				<li><a>info@re-cycle</a></li>
-				<li><a>accessibility mode</a>
-				<li><a>terms of use</a></li>
-				<li><a>privacy policy</a></li>
-			</ul>
-		</footer>
+              <th>COUNTRY</th>
+              <th>CITY</th>
+            </tr>
+              <tr>
+              <td>NORWAY</td>
+              <td>OSLO, BERGEN, STAVANGER</td>
+            </tr>
+            <tr>
+              <td>SWEDEN</td>
+              <td>STOCKHOLM</td>
+            </tr>
+            <tr>
+              <td>FINLAND</td>
+              <td>HELSINKI</td>
+            </tr>
+            <tr>
+              <td>USA</td>
+              <td>CHICAGO, LA, NEW YORK<td>
+            </tr>
+            <tr>
+              <td>ENGLAND</td>
+              <td>LONDON, LIVERPOOL</td>
+            </tr>
+          </table>
+        </section>
+        <section class="tour-page__main__section-3-iframe">
+          <iframe id="iframe" title="Google Maps" src="https://www.google.com" width="500px" height="500px" frameborder="1" allowfullscreen></iframe>
+        </section>
+      </main>
+      <footer>
+        <section> 
+          <h3>re-cycle.com&copy; 2020</h3>
+          <h3>Alexander Hardeland student at Noroff Front-End Development</h3>
+        </section>
+        <section>
+          <h3>social media</h3>
+          <ul>
+            <li><a href="https://www.instagram.com" target="_self"></a></li>
+            <li><a href="https://twitter.com" target="_self"></a></li>
+            <li><a href="https://www.facebook.com" target="_self"></a></li>
+          </ul>
+        </section>
+        <ul> 
+          <li><a>info@re-cycle.com</a></li>
+          <li><a>accessibility</a>
+          <li><a>terms of use</a></li>
+          <li><a>privacy policy</a></li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>
