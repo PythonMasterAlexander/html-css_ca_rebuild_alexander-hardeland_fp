@@ -38,7 +38,7 @@ main section:nth-child(2) a, .main__sectionContainer--landingPageImages, .main__
 }
 
 h1 {
-	flex: 0 0 85%;
+	flex: 0 0 90%;
 	font-size: 2rem;
 	margin-bottom: 100px;
 }
@@ -103,7 +103,7 @@ li {
 	padding: 0 5px 0 5px;
 }
 
-footer li:nth-child(4) {
+footer li:nth-child(4), .body__sectionContainer li:nth-child(4) {
 	border-right: none;
 }
 
@@ -155,7 +155,7 @@ footer img {
 
 header {
 	height: 150px;
-	justify-content: space-between;
+	justify-content: left;
 	max-width: 85%;
 	margin: 0 auto;
 }
@@ -170,8 +170,17 @@ header nav, header section:nth-child(4) {
 	align-self: center;
 }
 
+.header__hamburgerMenu--container {
+	display: none;
+}
+
+nav {
+	margin-left: 5%;
+}
+
 main {
-	margin: 100px 0;
+	margin: 100px auto;
+	max-width: 85%;
 }
 
 main section {
