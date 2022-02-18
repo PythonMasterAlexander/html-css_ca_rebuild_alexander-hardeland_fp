@@ -26,6 +26,17 @@ body {
 	font: 400 1.3rem 'Roboto', sans-serif;
 }
 
+header, main, footer, footer section:nth-child(2) {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+main section:nth-child(2) a, .main__sectionContainer--landingPageImages, .main__sectionContainer-landingPageImages__columnThree--imageTwo, 
+.divContainer__image, .main__sectionContainer-landingPageImages__columnThree--imageOne {
+	display: block;
+}
+
 h1 {
 	flex: 0 0 85%;
 	font-size: 2rem;
@@ -42,7 +53,7 @@ h1, h2, main h3, .header__logoContainer a {
 	font-family: 'Arvo', 'Georgia', serif;
 }
 
-footer h3, footer a {
+footer a {
 	font-weight: 400;
 	font-size: 1.3rem;
 }
@@ -60,11 +71,13 @@ a {
 
 footer a {
 	font-size: 1.3rem;
+	text-transform: lowercase;
 }
 
-main section:nth-child(2) a, .main__sectionContainer--landingPageImages, .main__sectionContainer-landingPageImages__columnThree--imageTwo, 
-.divContainer__image, .main__sectionContainer-landingPageImages__columnThree--imageOne {
-	display: block;
+footer h3 {
+	font-weight: 400;
+	font-size: 1.3rem;
+	margin-bottom: 10px;
 }
 
 section li {
@@ -75,18 +88,32 @@ header p, header a, main a {
 	color: var(--linkColor);
 }
 
+header a {
+	margin-right: 20px;
+}
+
 p {
 	font-size: 1.3rem;
 	line-height: 1.7rem;
 }
 
 li {
+	border-right: solid var(--whiteColor) 2px;
 	display: inline-block;
+	padding: 0 5px 0 5px;
+}
+
+footer li:nth-child(4) {
+	border-right: none;
 }
 
 .header__covidGuidelinesSection a {
 	color: var(--whiteColor);
 	font-size: 1rem;
+}
+
+.body__sectionContainer h3 {
+	margin-bottom: 10px;
 }
 
 img {
@@ -118,11 +145,19 @@ img {
 .divContainer__image {
 	height: 800px;
 	margin: 150px auto;
-	width: 800px;
+	width: 900px;
+}
+
+footer img {
+	width: 25px;
+	height: 25px;
 }
 
 header {
 	height: 150px;
+	justify-content: space-between;
+	max-width: 85%;
+	margin: 0 auto;
 }
 
 .header__covidGuidelinesSection {
@@ -159,10 +194,8 @@ footer {
 	height: 250px;
 }
 
-header, main, footer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
+footer section:nth-child(2) {
+	width: 200px;
 }
 
 main section:nth-child(2) {
@@ -252,7 +285,3 @@ a:active {
 		margin-top: 100px;
 	}
 }
-/*
-	Notes about assignment
-		- Don't use title attributes because of what MDN say about accessibility concerns
-*/
