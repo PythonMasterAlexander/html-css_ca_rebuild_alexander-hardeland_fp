@@ -129,6 +129,10 @@ p {
 	line-height: 1.7rem;
 }
 
+.routesToursPage__mainContainer div p {
+	margin-bottom: 10px;
+}
+
 li {
 	display: inline-block;
 	padding: 0 5px 0 5px;
@@ -272,8 +276,12 @@ main section:nth-child(2) {
 	gap: 50px;
 }
 
+form {
+	width: 800px;
+}
+
 fieldset {
-	padding: 20px;
+	padding: 25px 80px;
 	border-radius: 5px;
 	border: solid var(--blackColor) 2px;
 }
