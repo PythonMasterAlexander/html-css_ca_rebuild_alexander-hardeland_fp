@@ -14,7 +14,7 @@
 		<div class="contentWrapper"> 
 			<header>
 				<section class="header__covidGuidelinesSection">
-					<a>Covid Guidelines</a>
+					<a>Covid Guidelines</a><img src="images/right-arrow-circle-white.svg" alt="Right pointing arrow">
 				</section>
 				<div class="header__logoContainer">
 					<a href="index.html">Re-Cycle</a>
@@ -25,29 +25,29 @@
 					<a href="routes-tours.html">Bike Tour</a>
 					<a href="contact.html">Contact</a>
 				</nav>
-				<section>
-					<img src="" alt=""><img src="images/menu-icon-white.svg" alt="Hamburger menu, for web">
+				<section class="header__hamburgerMenu--container">
+					<img src="images/menu-icon-white.svg" alt="Hamburger menu, for web">
 				</section>
 			</header>
-			<main>
+			<h1 class="contactPage--centerHeading">Write us a message</h1>
+			<main class="contactPage--mainContainer">
 				<form action="form-success.php" method="GET">
 					<fieldset>
-						<legend>If You Want to know More</legend>
+						<legend>Message</legend>
+						<div> 
+							<label for="firstNameId">Name</label>
+							<input type="text" name="first-name" id="firstNameId" required>
+						</div>
 						<div>
-							<label for="email-id">Your Email</label>
-							<input type="email" name="email" id="email-id" class="form__input" requierd>
+							<label for="emailId">Email</label>
+							<input type="email" name="email" id="emailId" required>
 						</div>
 						<div> 
-							<label for="first-name-id">Your First Name</label>
-							<input type="text" name="first-name" id="first-name-id" class="form__input" required>
+							<label for="textAreaId">Write us a Message</label>
+							<textarea name="message" id="textAreaId"></textarea>
 						</div>
-						<div> 
-							<label for="last-name-id">Your Last Name</label>
-							<input type="text" name="last-name" id="last-name-id" class="form__input" required>
-						</div>
-						<div> 
-							<label for="text-area-id">Write us a Message</label>
-							<textarea name="message" id="text-area-id" class="form__input" required></textarea>
+						<div class="button contactPageSubmitButtonContainer">
+							<button>Submit</button>
 						</div>
 					</fieldset>
 				</form>
@@ -58,7 +58,7 @@
 					<h3>Alexander Hardeland student at Noroff Front-End Development</h3>
 				</section>
 				<section>
-					<a href="https://www.instagram.com" target="_self"><img src="images/instagram-white.svg" alt="Instagram camera logo in white"></a>
+					<a href="https://www.instagram.com"><img src="images/instagram-white.svg" alt="Instagram camera logo in white"></a>
 					<a href="https://twitter.com" target="_self"><img src="images/twitter-white.svg" alt="Twitter bird logo in white"></a>
 					<a href="https://www.facebook.com" target="_self"><img src="images/facebook-white.svg" alt="Facebook F letter logo in white"></a>
 				</section>

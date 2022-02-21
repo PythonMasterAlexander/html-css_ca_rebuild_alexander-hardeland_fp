@@ -1,7 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="29.54" height="29.071" viewBox="0 0 29.54 29.071">
-  <g id="Group_137" data-name="Group 137" transform="translate(-1500.173 -75)">
-    <path id="Path_20" data-name="Path 20" d="M4.5,18H27.04" transform="translate(1499.173 71.536)" fill="none" stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="7"/>
-    <path id="Path_21" data-name="Path 21" d="M4.5,9H27.04" transform="translate(1499.173 69.5)" fill="none" stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="7"/>
-    <path id="Path_22" data-name="Path 22" d="M4.5,27H27.04" transform="translate(1499.173 73.571)" fill="none" stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="7"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 29.5 29.1" style="enable-background:new 0 0 29.5 29.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#231F20;stroke-width:7;stroke-linecap:square;stroke-linejoin:round;}
+</style>
+<g id="Group_137" transform="translate(-1500.173 -75)">
+	<path id="Path_20" class="st0" d="M1503.7,89.5h22.5"/>
+	<path id="Path_21" class="st0" d="M1503.7,78.5h22.5"/>
+	<path id="Path_22" class="st0" d="M1503.7,100.6h22.5"/>
+</g>
 </svg>
