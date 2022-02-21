@@ -1,3 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="29.945" height="29.95" viewBox="0 0 29.945 29.95">
-  <path id="Icon_awesome-search" data-name="Icon awesome-search" d="M29.538,25.894l-5.832-5.832a1.4,1.4,0,0,0-.994-.409h-.953a12.161,12.161,0,1,0-2.106,2.106v.953a1.4,1.4,0,0,0,.409.994l5.832,5.832a1.4,1.4,0,0,0,1.983,0l1.655-1.655A1.41,1.41,0,0,0,29.538,25.894ZM12.166,19.653a7.487,7.487,0,1,1,7.487-7.487A7.483,7.483,0,0,1,12.166,19.653Z" fill="#fff"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 29.9 30" style="enable-background:new 0 0 29.9 30;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#231F20;}
+</style>
+<path id="Icon_awesome-search" class="st0" d="M29.5,25.9l-5.8-5.8c-0.3-0.3-0.6-0.4-1-0.4h-1c4.1-5.3,3.2-12.9-2.1-17.1
+	S6.7-0.6,2.6,4.7s-3.2,12.9,2.1,17.1c4.4,3.4,10.6,3.4,15,0v1c0,0.4,0.1,0.7,0.4,1l5.8,5.8c0.5,0.5,1.4,0.5,2,0c0,0,0,0,0,0l1.7-1.7
+	C30.1,27.3,30.1,26.4,29.5,25.9z M12.2,19.7c-4.1,0-7.5-3.4-7.5-7.5S8,4.7,12.2,4.7s7.5,3.4,7.5,7.5l0,0
+	C19.7,16.3,16.3,19.7,12.2,19.7C12.2,19.7,12.2,19.7,12.2,19.7z"/>
 </svg>

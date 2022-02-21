@@ -14,7 +14,7 @@
     <div class="contentWrapper"> 
       <header>
         <section class="header__covidGuidelinesSection">
-          <a>Covid Guidelines</a>
+          <a>Covid Guidelines</a><img src="images/right-arrow-circle-white.svg" alt="Right pointing arrow">
         </section>
         <div class="header__logoContainer">
           <a href="index.html">Re-Cycle</a>
@@ -25,45 +25,43 @@
           <a href="routes-tours.html">Bike Tour</a>
           <a href="contact.html">Contact</a>
         </nav>
-        <section>
-          <img src="" alt=""><img src="images/menu-icon-white.svg" alt="Hamburger menu, for web">
+        <section class="header__hamburgerMenu--container">
+          <img src="images/menu-icon-white.svg" alt="Hamburger menu, for web">
         </section>
       </header>
-      <main> 
+      <main class="routesToursPage__mainContainer"> 
+        <h1>Find a tour</h1>
         <section>
-          <input type="search" title="Try... Norway or Bike in Oslo" class="main-search__field">
-          <input type="submit" value="search" class="main-search__field--submit-button">
+          <div>
+            <h2>Norway</h2>
+            <ul>
+              <li><a>Oslo</a></li>
+              <li><a>Bergen</a></li>
+              <li><a>Stavanger</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>America</h2>
+            <ul>
+              <li><a>San Francisco</a></li>
+              <li><a>New York</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Australia</h2>
+            <ul>
+              <li><a>Melbourne</a></li>
+            </ul>
+          </div>
+          <p>Return home</p>
+          <div class="button homeButton">
+            <a href="index.html">Home</a>
+          </div>
         </section>
         <section>
-          <table>
-            <tr>
-              <th>COUNTRY</th>
-              <th>CITY</th>
-            </tr>
-              <tr>
-              <td>NORWAY</td>
-              <td>OSLO, BERGEN, STAVANGER</td>
-            </tr>
-            <tr>
-              <td>SWEDEN</td>
-              <td>STOCKHOLM</td>
-            </tr>
-            <tr>
-              <td>FINLAND</td>
-              <td>HELSINKI</td>
-            </tr>
-            <tr>
-              <td>USA</td>
-              <td>CHICAGO, LA, NEW YORK<td>
-            </tr>
-            <tr>
-              <td>ENGLAND</td>
-              <td>LONDON, LIVERPOOL</td>
-            </tr>
-          </table>
-        </section>
-        <section class="tour-page__main__section-3-iframe">
-          <iframe id="iframe" title="Google Maps" src="https://www.google.com" width="500px" height="500px" frameborder="1" allowfullscreen></iframe>
+          <iframe
+            id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64041.69142990145!2d10.715077518910313!3d59.893922481173966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e61f267f039%3A0x7e92605fd3231e9a!2sOslo!5e0!3m2!1sno!2sno!4v1645455838070!5m2!1sno!2sno"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
       </main>
       <footer>
