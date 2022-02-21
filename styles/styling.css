@@ -105,6 +105,10 @@ footer a {
 	text-transform: lowercase;
 }
 
+.routesToursPage__mainContainer a {
+	text-decoration: underline;
+}
+
 footer h3 {
 	font-weight: 400;
 	font-size: 1.3rem;
@@ -127,6 +131,10 @@ header a {
 p {
 	font-size: 1.3rem;
 	line-height: 1.7rem;
+}
+
+.routesToursPage__mainContainer div p {
+	margin-bottom: 10px;
 }
 
 li {
@@ -225,6 +233,10 @@ main {
 	max-width: 85%;
 }
 
+article {
+	max-width: 1040px;
+}
+
 main section {
 	max-width: 600px;
 }
@@ -272,8 +284,12 @@ main section:nth-child(2) {
 	gap: 50px;
 }
 
+form {
+	width: 800px;
+}
+
 fieldset {
-	padding: 20px;
+	padding: 25px 80px;
 	border-radius: 5px;
 	border: solid var(--blackColor) 2px;
 }
