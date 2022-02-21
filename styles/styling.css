@@ -229,6 +229,10 @@ main {
 	max-width: 85%;
 }
 
+article {
+	max-width: 1040px;
+}
+
 main section {
 	max-width: 600px;
 }
