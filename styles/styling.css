@@ -73,8 +73,9 @@ h1, h2, main h3, .header__logoContainer a {
 }
 
 footer a {
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 1.3rem;
+	text-transform: lowercase;
 }
 
 a {
@@ -88,7 +89,7 @@ button {
 	color: var(--whiteColor);
 	cursor: pointer;
 	font-size: 1.3rem;
-	padding: 10px;
+	padding: 20px;
 }
 
 .header__logoContainer a {
@@ -100,17 +101,12 @@ button {
 	margin-top: 25px;
 }
 
-footer a {
-	font-size: 1.3rem;
-	text-transform: lowercase;
-}
-
 .routesToursPage__mainContainer a {
 	text-decoration: underline;
 }
 
 footer h3 {
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 1.3rem;
 	margin-bottom: 10px;
 }
@@ -250,7 +246,10 @@ main section:nth-child(2), main section:last-child {
 }
 
 .contactPage--mainContainer {
+	background-color: var(--whiteColor);
 	margin: 50px auto;
+	max-width: 70%;
+	padding-bottom: 70px;
 }
 
 .routesToursPage__mainContainer {
@@ -269,8 +268,8 @@ main section:nth-child(2), main section:last-child {
 }
 
 footer {
-	color: var(--blackColor);
 	align-items: center;
+	color: var(--blackColor);
 	height: 250px;
 }
 
@@ -279,9 +278,12 @@ footer section:nth-child(2) {
 }
 
 main section:nth-child(2) {
+	background-color: var(--whiteColor);
+	border-radius: 2px;
 	display: flex;
 	flex-direction: column;
 	gap: 50px;
+	padding: 20px;
 }
 
 form {
@@ -310,6 +312,11 @@ input {
 textarea {
 	height: 300px;
 	width: 100%;
+}
+
+input, textarea {
+	border: solid var(--blackColor) 2px;
+	border-radius: 5px;
 }
 
 a:link {
