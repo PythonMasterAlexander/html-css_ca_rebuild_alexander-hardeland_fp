@@ -216,10 +216,6 @@ header nav, header section:nth-child(4) {
 	align-self: center;
 }
 
-.header__hamburgerMenu--container {
-	display: none;
-}
-
 nav {
 	margin-left: 5%;
 }
@@ -263,7 +259,7 @@ main section:nth-child(2), main section:last-child {
 }
 
 #iframe {
-	width: 1200px;
+	width: 700px;
 	height: 600px;
 }
 
@@ -317,15 +313,18 @@ textarea {
 input, textarea {
 	border: solid var(--blackColor) 2px;
 	border-radius: 5px;
+	padding-left: 8px;
 }
 
 a:link {
 	text-decoration: none;
 }
 
-
-a:active {
-	text-decoration: underline;
+.activeLink {
+	box-sizing: content-box;
+	border-radius: 2px;
+	padding: 10px;
+	background-color: var(--whiteColor);
 }
 
 .button {
@@ -363,8 +362,20 @@ a:active {
 	margin: 0 auto;
 }
 @media only screen and (max-width: 1400px) {
+  .header__logoContainer a {
+		font-size: 2.5rem;
+	}
+
+	nav a {
+		font-size: 1.2rem;
+	}
+
 	h1 {
 		font-size: 1.8rem;
+	}
+
+	legend {
+		font-size: 1.5rem;
 	}
 
 	.divContainer__image {
@@ -376,8 +387,21 @@ a:active {
 		padding: 20px;
 	}
 
-	main section:last-child {
-		display: none;
+	.contactPage--mainContainer {
+		max-width: fit-content;
+	}
+
+	iframe {
+		margin: 0 auto;
+	}
+
+	footer {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.routesToursPage__mainContainer {
+		flex-direction: column;
 	}
 }
 
@@ -390,8 +414,55 @@ a:active {
 		text-align: center;
 	}
 
+	p {
+		font-size: 1rem;
+	}
+
+	label {
+		font-size: 1rem;
+	}
+
+	.routesToursPage__mainContainer h2 {
+		font-size: 1.2rem;
+		text-align: left;
+	}
+
+	.routesToursPage__mainContainer a {
+		font-size: 1rem;
+	}
+
 	.button {
 		margin: 20px auto;
+	}
+
+	header {
+		justify-content: center;
+		height: fit-content;
+		gap: 20px;
+	}
+
+	#iframe {
+		width: 300px;
+		margin-top: 50px;
+		height: 400px;
+	}
+
+	nav a {
+		font-size: 1rem;
+	}
+
+	fieldset {
+		border: 0;
+	}
+
+	input {
+		height: 30px;
+		width: fit-content;
+	}
+
+	footer h3, footer a {
+		font-weight: 400;
+		font-size: 1rem;
 	}
 }
 
@@ -401,40 +472,72 @@ a:active {
 		margin-bottom: 50px;
 	}
 
-	main section:nth-child(3), .body__imageContainer {
+	.routesToursPage__mainContainer h2 {
+		font-size: 0.8rem;
+	}
+
+	.routesToursPage__mainContainer a {
+		font-size: 0.7rem;
+	}
+
+	header {
+		flex-direction: column;
+	}
+
+	.header__logoContainer {
+		margin-top: 50px;
+	}
+
+	.header__logoContainer a {
+		font-size: 1.8rem;
+	}
+
+	nav {
+		align-self: baseline !important; 
+		margin-left: 0;
+	}
+
+	nav a {
+		font-size: 0.7rem;
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	main section:nth-child(3), .body__imageContainer, .header__covidGuidelinesSection {
 		display: none;
+	}
+
+	.routesToursPage__mainContainer section:nth-child(2) {
+		max-width: fit-content;
+	}
+
+	.button a {
+		font-size: 1.3rem;
+	}
+
+	.body__sectionContainer h3 {
+		font-size: 1rem;
+	}
+
+	.body__sectionContainer li {
+		font-size: 0.8rem;
 	}
 
 	footer {
 		margin-top: 100px;
+		height: fit-content;
+		gap: 50px;
+	}
+
+	footer h3 {
+		max-width: 150px;
+	}
+
+	footer li {
+		display: block;
+	}
+
+	footer ul {
+		margin-bottom: 50px;
 	}
 }
-
-/*
-Hi Alexander
-
-The HTML is neatly written and you've used HTML5 elements which is great to see.
-
-Unfortunately the site can't be used on a mobile device because the hamburger menu doesn't work and on 
-mobile devices it's set to display: none. There's two ways to get a hamburger menu to work, one is 
-using JavaScript, and the other is using the checkbox hack in CSS. https://scrimba.com/c/ceM3paHb
-
-If you couldn't get the hamburger menu working, then just having the nav showing would have been a better option.
-
-The blue text on the white background isn't WCAG compliant as there isn't enough contrast between the colours. OK
-
-The Contact and About Us pages are quite wide. I'd suggest using a max-width and margin: auto to bring them in 
-so they don't stretch too wide. OK
-
-The hover on the nav makes all the items change size which doesn't feel right. It should just affect the item you're 
-hovering on.
-
-The logo doesn't link home. OK
-
-There should just be one h1 per page and it should be unique for that page. OK
-
-Meta descriptions and titles are unique per page which is great to see. OK
-
-It's good to read about your process in the report. Hopefully with a bit more planning you'll find it easier in 
-the semester project. On a side note, I wouldn't suggest floats for layout, and am glad to see you using Flexbox. OK
-*/

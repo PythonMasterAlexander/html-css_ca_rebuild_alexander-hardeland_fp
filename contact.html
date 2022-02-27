@@ -25,13 +25,10 @@
 					<a href="routes-tours.html">Bike Tour</a>
 					<a href="contact.html">Contact</a>
 				</nav>
-				<section class="header__hamburgerMenu--container">
-					<img src="images/menu-icon-white.svg" alt="Hamburger menu, for web">
-				</section>
 			</header>
 			<main class="contactPage--mainContainer">
 				<h1 class="contactPage--centerHeading">Write us a message</h1>
-				<form action="form-success.php" method="GET">
+				<form action="form-success.php" method="post">
 					<fieldset>
 						<legend>Message</legend>
 						<div> 
@@ -44,7 +41,7 @@
 						</div>
 						<div> 
 							<label for="textAreaId">Write us a Message</label>
-							<textarea name="message" id="textAreaId"></textarea>
+							<textarea name="message" id="textAreaId" required></textarea>
 						</div>
 						<div class="button contactPageSubmitButtonContainer">
 							<button>Submit</button>
@@ -70,5 +67,6 @@
 				</ul>
 			</footer>
 		</div>
+		<script src="scripts/script.js"></script>
 	</body>
 </html>
