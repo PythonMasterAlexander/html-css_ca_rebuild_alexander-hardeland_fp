@@ -19,6 +19,8 @@ html {
 	--whiteColor: #fff;
 	--backgroundColor: #5CDB95;
 	--linkColor: #05386B;
+	--errorColor: #ff0000;
+	--successColor: #26bc21;
 }
 
 body {
@@ -308,12 +310,18 @@ input {
 textarea {
 	height: 300px;
 	width: 100%;
+	padding-top: 5px;
 }
 
 input, textarea {
-	border: solid var(--blackColor) 2px;
+	border: solid #b2b2b2 2px;
 	border-radius: 5px;
 	padding-left: 8px;
+	outline: 0;
+}
+
+input:hover, textarea:hover {
+	border: solid var(--blackColor) 2px;
 }
 
 a:link {
