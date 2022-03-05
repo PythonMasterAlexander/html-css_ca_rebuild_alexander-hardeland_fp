@@ -25,26 +25,26 @@
 					<a href="routes-tours.html">Bike Tour</a>
 					<a href="contact.html">Contact</a>
 				</nav>
-				<section class="header__hamburgerMenu--container">
-					<img src="images/menu-icon-white.svg" alt="Hamburger menu, for web">
-				</section>
 			</header>
 			<main class="contactPage--mainContainer">
 				<h1 class="contactPage--centerHeading">Write us a message</h1>
-				<form action="form-success.php" method="GET">
+				<form action="" method="post" id="submitPageFormValidation">
 					<fieldset>
 						<legend>Message</legend>
 						<div> 
-							<label for="firstNameId">Name</label>
-							<input type="text" name="first-name" id="firstNameId" required>
+							<label for="fullNameId">Name</label>
+							<input type="text" name="fullName" id="fullNameId">
+							<div class="inputContainer"></div>
 						</div>
 						<div>
 							<label for="emailId">Email</label>
-							<input type="email" name="email" id="emailId" required>
+							<input type="email" name="email" id="emailId">
+							<div class="inputContainer"></div>
 						</div>
 						<div> 
 							<label for="textAreaId">Write us a Message</label>
 							<textarea name="message" id="textAreaId"></textarea>
+							<div class="inputContainer"></div>
 						</div>
 						<div class="button contactPageSubmitButtonContainer">
 							<button>Submit</button>
@@ -70,5 +70,8 @@
 				</ul>
 			</footer>
 		</div>
+		<script src="scripts/script.js"></script>
+		<script src="scripts/components.js"></script>
+		<script src="scripts/contact.js"></script>
 	</body>
 </html>
