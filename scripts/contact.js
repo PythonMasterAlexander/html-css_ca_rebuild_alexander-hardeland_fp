@@ -3,7 +3,7 @@ import { input } from "./component/components.js";
 import { invalidBorderColor } from "./component/components.js";
 import { validBorderColor } from "./component/components.js";
 import { inputContainer } from "./component/components.js";
-import { formErrorMessage } from "./component/components.js";
+import { formErrorMessage } from "./functions.js";
 
 const form = document.querySelector('#submitPageFormValidation');
 

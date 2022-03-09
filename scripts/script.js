@@ -7,12 +7,3 @@ navigationLinks.forEach(links => {
     links.classList.add('activeLink');
   }
 });
-
-//Error message
- //Create a message for the user if input fields dont receive the right information
-const formErrorMessage = function() {
-
-  let htmlMessage = `<img src="/images/form-error-symbol.svg" style="margin-right: 10px">
-  <p style="display:inline-block; color: red; margin-top:10px">${fullNameErrorMessage}</p>`;
-  return htmlMessage;
-};
