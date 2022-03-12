@@ -11,3 +11,4 @@ export const userMessageError = 'Enter at a minimum two words';
 export const validBorderColor = '#386641';
 export const invalidBorderColor = '#ff0000';
 
+export const formContainer = document.querySelector('#submitPageFormValidation');
