@@ -1,4 +1,3 @@
-//By Alexander Hardeland
 import { input } from "./component/components.js";
 import { formContainer } from "./component/components.js";
 import { inputFieldError } from "./functions.js";

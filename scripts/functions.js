@@ -1,4 +1,3 @@
-//By Alexander Hardeland
 import { inputContainer } from "./component/components.js";
 import { input } from "./component/components.js";
 import { invalidBorderColor } from "./component/components.js";
