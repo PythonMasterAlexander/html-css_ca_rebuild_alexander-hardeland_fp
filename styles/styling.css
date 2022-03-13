@@ -369,6 +369,16 @@ a:link {
 	width: 100%;
 	margin: 0 auto;
 }
+
+.inputFieldErrorImage {
+	margin-right: 10px;
+}
+
+.inputFieldErrorMessage {
+	color: var(--errorColor);
+	display: inline-block;
+	margin-top: 10px;
+}
 @media only screen and (max-width: 1400px) {
   .header__logoContainer a {
 		font-size: 2.5rem;

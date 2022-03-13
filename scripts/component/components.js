@@ -6,7 +6,7 @@ export const inputContainer = document.querySelector('.inputContainer');
 
 export const formContainer = document.querySelector('#submitPageFormValidation');
 
-export const fullNameErrorMessage = 'Enter your full name';
+export const errorMessage = 'Enter the right input';
 export const emailErrorMessage = 'Enter a valid email address';
 
 export const userMessageError = 'Enter at a minimum two words';
