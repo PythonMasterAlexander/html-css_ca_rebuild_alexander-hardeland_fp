@@ -1,6 +1,5 @@
-//By Alexander Hardeland
-const locatePage = document.location.pathname;
-const navigationLinks = document.querySelectorAll('nav a');
+import { locatePage } from "./component/components.js";
+import { navigationLinks } from "./component/components.js";
 
 navigationLinks.forEach(links => {
   if(links.href.includes(`${locatePage}`)) {
