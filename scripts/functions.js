@@ -1,8 +1,10 @@
+/*
 import { inputContainer } from "./component/components.js";
 import { input } from "./component/components.js";
 import { invalidBorderColor } from "./component/components.js";
 import { validBorderColor } from "./component/components.js";
 import { errorMessage } from "./component/components.js";
+*/
 
 
 
@@ -56,9 +58,9 @@ export const inputFieldError = function(event) {
     }
   };
 };
+*/
 
 //Create a form validation function 
 export const validateForm = function(event) {
   event.preventDefault();
 };
-*/
