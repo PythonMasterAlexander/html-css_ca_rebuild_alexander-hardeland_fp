@@ -18,6 +18,10 @@ for(let i = 0; i < input.length; i++) {
 
   input[i].addEventListener('keyup', function(event) {
     let keyValueLength = event.target.value.length;
+
+    if(keyValueLength < 3) {
+      inputErrorContainer.append(imgHtmlElement, errorTextMessage);
+    }
   });
 }
 
