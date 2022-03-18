@@ -1,29 +1,33 @@
-import { formContainer } from "./component/components.js";
+import { formContainer, fullNameErrorMessage, formInputFields, validBorderColor, invalidBorderColor } 
+from "./component/components.js";
+
 import { validateForm } from "./functions.js";
-import { fullNameErrorMessage } from "./component/components.js";
-import { input } from "./component/components.js";
 
 const inputErrorContainer = document.querySelector('.inputErrorContainer');
 
 const imgHtmlElement = document.createElement('img');
-imgHtmlElement.classList.add('inputFieldErrorImage');
-imgHtmlElement.src = "/images/form-error-symbol.svg";
-
 const errorTextMessage = document.createElement('p');
+
+imgHtmlElement.classList.add('inputFieldErrorImage');
 errorTextMessage.classList.add('inputFieldErrorMessage');
+
+imgHtmlElement.src = "/images/form-error-symbol.svg";
 errorTextMessage.textContent = fullNameErrorMessage; 
 
-//A lesson, when using addEventListener we cant use 'on' before the event
-for(let i = 0; i < input.length; i++) {
+Array.from(formInputFields).forEach(function(formField) {
+  console.log(formField);
 
-  input[i].addEventListener('keyup', function(event) {
+  formField.addEventListener('keyup', function(event) {
     let keyValueLength = event.target.value.length;
 
     if(keyValueLength < 3) {
       inputErrorContainer.append(imgHtmlElement, errorTextMessage);
-    }
-  });
-}
+      formField.style.border = invalidBorderColor;
 
-
+    } else {
+      inputErrorContainer.remove();
+      formField.style.border = validBorderColor;
+    } 
+  })
+});
 formContainer.addEventListener('submit', validateForm);
